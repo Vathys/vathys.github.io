@@ -2,7 +2,7 @@ import { getBlogPosts } from "app/blog/utils";
 
 export const dynamic = "force-static";
 
-export const baseUrl = "https://vathys.github.com";
+export const baseUrl = "https://vathys.github.io";
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({

@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
-  basePath: "/vathys.github.com",
+  basePath: "/vathys.github.io",
   images: {
     unoptimized: true,
   },
