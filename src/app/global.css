@@ -7,5 +7,23 @@
 
 :root {
   color-scheme: dark;
+  --background: oklch(0.1408 0.0135 318.11);
+  --foreground: oklch(0.928 0.0214 190.33);
+  --primary: oklch(0.5965 0.0951 190.33);
+  --secondary: oklch(0.285 0.1366 318.11);
 }
 
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: oklch(from var(--foreground) 0.5 0.01 h);
+  --color-border: oklch(from var(--foreground) 0.5 c h / 0.5);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
